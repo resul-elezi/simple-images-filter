@@ -20,7 +20,7 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-inline: 2rem;
+    margin-inline: 1rem;
     list-style: none;
 }
 li {
@@ -42,18 +42,20 @@ li a {
 }
 .all {
     display: grid;
-    gap: 10px;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
     width: 100%;
     margin: 1rem;
     padding: 1rem;
     background: #e0ebfa;
-    border: 1px solid #7f43ae;
     border-radius: 10px;
+    box-shadow: rgba(199, 189, 180, .3) 0px 1px 2px 0px, rgba(199, 189, 180, .15) 0px 1px 3px 1px;
 }
 img {
     width: 100%;
     height: 9.375rem;
     object-fit: cover;
-    border: 2px solid #fde133;
+    /* border: 1px solid #7f43ae; */
     border-radius: inherit;
+    box-shadow: rgba(127, 67, 174, .4) 0px 2px 4px, rgba(127, 67, 174, .3) 0px 7px 13px -3px, rgba(127, 67, 174, .2) 0px -3px 0px inset;
 }
