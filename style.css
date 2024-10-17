@@ -41,9 +41,6 @@ li a {
     color: #2d1328;
 }
 .all {
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
     width: 100%;
     margin: 1rem;
     padding: 1rem;
@@ -53,9 +50,18 @@ li a {
 }
 img {
     width: 100%;
-    height: 9.375rem;
+    max-width: 18.75rem;
+    height: auto;
+    padding: .5rem;
     object-fit: cover;
     /* border: 1px solid #7f43ae; */
     border-radius: inherit;
     box-shadow: rgba(127, 67, 174, .4) 0px 2px 4px, rgba(127, 67, 174, .3) 0px 7px 13px -3px, rgba(127, 67, 174, .2) 0px -3px 0px inset;
+    display: none;
+}
+div {
+    padding: .5rem;
+}
+div:target img {
+    display: block;
 }
