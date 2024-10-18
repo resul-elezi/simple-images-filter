@@ -41,6 +41,9 @@ li a {
     color: #2d1328;
 }
 .all {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     width: 100%;
     margin: 1rem;
     padding: 1rem;
@@ -48,9 +51,12 @@ li a {
     border-radius: 10px;
     box-shadow: rgba(199, 189, 180, .3) 0px 1px 2px 0px, rgba(199, 189, 180, .15) 0px 1px 3px 1px;
 }
+.all:target img {
+    display: block;
+}
 img {
     width: 100%;
-    max-width: 18.75rem;
+    /* max-width: 18.75rem; */
     height: auto;
     padding: .5rem;
     object-fit: cover;
@@ -58,10 +64,4 @@ img {
     border-radius: inherit;
     box-shadow: rgba(127, 67, 174, .4) 0px 2px 4px, rgba(127, 67, 174, .3) 0px 7px 13px -3px, rgba(127, 67, 174, .2) 0px -3px 0px inset;
     display: none;
-}
-div {
-    padding: .5rem;
-}
-div:target img {
-    display: block;
 }
